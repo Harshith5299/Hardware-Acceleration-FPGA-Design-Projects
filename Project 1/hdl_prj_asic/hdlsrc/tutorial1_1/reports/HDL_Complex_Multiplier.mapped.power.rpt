@@ -1,0 +1,55 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : HDL_Complex_Multiplier
+Version: P-2019.03-SP3
+Date   : Wed Feb  3 10:08:19 2021
+****************************************
+
+
+Library(s) Used:
+
+    saed32hvt_ss0p95v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_hvt/db_nldm/saed32hvt_ss0p95v125c.db)
+    saed32rvt_ss0p95v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db)
+    saed32lvt_ss0p95v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_lvt/db_nldm/saed32lvt_ss0p95v125c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+HDL_Complex_Multiplier 16000             saed32rvt_ss0p95v125c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   1.5300 mW   (92%)
+  Net Switching Power  = 141.7739 uW    (8%)
+                         ---------
+Total Dynamic Power    =   1.6718 mW  (100%)
+
+Cell Leakage Power     =   1.3171 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register       1.1687e+03           19.9625        2.3409e+08        1.4228e+03  (  47.60%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational    361.3094          121.8114        1.0830e+09        1.5661e+03  (  52.40%)
+--------------------------------------------------------------------------------------------------
+Total          1.5300e+03 uW       141.7739 uW     1.3171e+09 pW     2.9889e+03 uW
+1

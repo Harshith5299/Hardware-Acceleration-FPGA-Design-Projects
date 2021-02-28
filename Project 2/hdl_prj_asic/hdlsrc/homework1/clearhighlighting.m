@@ -1,0 +1,12 @@
+SLStudio.Utils.RemoveHighlighting(get_param('homework1', 'handle'));
+SLStudio.Utils.RemoveHighlighting(get_param('gm_homework1', 'handle'));
+annotate_port('gm_homework1/HDL_Complex_Multiplier/Delay2', 0, 1, '');
+annotate_port('gm_homework1/HDL_Complex_Multiplier/Delay3', 1, 1, '');
+annotate_port('gm_homework1/HDL_Complex_Multiplier/Add', 1, 1, '');
+annotate_port('homework1/HDL_Complex_Multiplier/Add', 1, 1, '');
+annotate_port('gm_homework1/HDL_Complex_Multiplier/Bit Slice1', 0, 1, '');
+annotate_port('gm_homework1/HDL_Complex_Multiplier/Bitwise Operator1', 0, 1, '');
+annotate_port('gm_homework1/HDL_Complex_Multiplier/Bitwise Operator2', 1, 1, '');
+annotate_port('homework1/HDL_Complex_Multiplier/Bitwise Operator2', 1, 1, '');
+annotate_port('gm_homework1/HDL_Complex_Multiplier/Multiport Switch', 0, 1, '');
+annotate_port('gm_homework1/HDL_Complex_Multiplier/Multiport Switch1', 0, 1, '');

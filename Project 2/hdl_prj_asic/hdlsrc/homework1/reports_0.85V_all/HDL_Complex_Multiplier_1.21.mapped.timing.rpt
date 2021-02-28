@@ -1,0 +1,62 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : HDL_Complex_Multiplier
+Version: P-2019.03-SP3
+Date   : Tue Feb 23 13:18:05 2021
+****************************************
+
+Operating Conditions: ss0p75v125c   Library: saed32rvt_ss0p75v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Delay2_out1_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Delay3_out1_reg[42]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  HDL_Complex_Multiplier
+                     8000                  saed32rvt_ss0p75v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  Delay2_out1_reg[2]/CLK (DFFX2_LVT)       0.00       0.00 r
+  Delay2_out1_reg[2]/QN (DFFX2_LVT)        0.16       0.16 r
+  U977/Y (IBUFFX32_LVT)                    0.11       0.27 f
+  U1401/Y (XNOR2X2_LVT)                    0.09       0.36 f
+  U1273/Y (NAND2X0_LVT)                    0.07       0.43 r
+  U992/Y (AOI21X1_LVT)                     0.11       0.54 f
+  U986/Y (OA21X1_LVT)                      0.07       0.61 f
+  U969/Y (OA21X1_LVT)                      0.08       0.69 f
+  U968/Y (INVX1_LVT)                       0.03       0.73 r
+  U960/Y (NAND3X0_LVT)                     0.04       0.76 f
+  U900/Y (AND3X1_LVT)                      0.11       0.87 f
+  U897/Y (INVX4_LVT)                       0.05       0.92 r
+  U1632/Y (AO21X1_LVT)                     0.09       1.02 r
+  U1633/Y (XNOR2X2_LVT)                    0.09       1.11 f
+  U1634/Y (NAND2X0_LVT)                    0.05       1.16 r
+  U1637/Y (NAND4X0_LVT)                    0.05       1.21 f
+  Delay3_out1_reg[42]/D (DFFX1_LVT)        0.00       1.21 f
+  data arrival time                                   1.21
+
+  clock clk (rise edge)                    1.21       1.21
+  clock network delay (ideal)              0.00       1.21
+  Delay3_out1_reg[42]/CLK (DFFX1_LVT)      0.00       1.21 r
+  library setup time                      -0.08       1.13
+  data required time                                  1.13
+  -----------------------------------------------------------
+  data required time                                  1.13
+  data arrival time                                  -1.21
+  -----------------------------------------------------------
+  slack (VIOLATED)                                   -0.08
+
+
+1

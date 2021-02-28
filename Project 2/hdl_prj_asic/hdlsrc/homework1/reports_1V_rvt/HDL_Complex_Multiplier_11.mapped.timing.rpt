@@ -1,0 +1,119 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : HDL_Complex_Multiplier
+Version: P-2019.03-SP3
+Date   : Tue Feb 23 12:30:46 2021
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Delay2_out1_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Delay3_out1_reg[63]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  HDL_Complex_Multiplier
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  Delay2_out1_reg[2]/CLK (DFFX2_RVT)       0.00       0.00 r
+  Delay2_out1_reg[2]/QN (DFFX2_RVT)        0.19       0.19 f
+  U470/Y (INVX0_RVT)                       0.07       0.25 r
+  U471/Y (INVX0_RVT)                       0.11       0.36 f
+  U627/Y (INVX0_RVT)                       0.14       0.50 r
+  U629/Y (AO22X1_RVT)                      0.12       0.62 r
+  intadd_5/U64/CO (FADDX1_RVT)             0.10       0.72 r
+  intadd_5/U63/CO (FADDX1_RVT)             0.10       0.82 r
+  intadd_5/U62/CO (FADDX1_RVT)             0.10       0.91 r
+  intadd_5/U61/CO (FADDX1_RVT)             0.10       1.01 r
+  intadd_5/U60/CO (FADDX1_RVT)             0.10       1.10 r
+  intadd_5/U59/CO (FADDX1_RVT)             0.10       1.20 r
+  intadd_5/U58/CO (FADDX1_RVT)             0.10       1.30 r
+  intadd_5/U57/CO (FADDX1_RVT)             0.10       1.39 r
+  intadd_5/U56/CO (FADDX1_RVT)             0.10       1.49 r
+  intadd_5/U55/CO (FADDX1_RVT)             0.10       1.58 r
+  intadd_5/U54/CO (FADDX1_RVT)             0.10       1.68 r
+  intadd_5/U53/CO (FADDX1_RVT)             0.10       1.78 r
+  intadd_5/U52/CO (FADDX1_RVT)             0.10       1.87 r
+  intadd_5/U51/CO (FADDX1_RVT)             0.10       1.97 r
+  intadd_5/U50/CO (FADDX1_RVT)             0.10       2.06 r
+  intadd_5/U49/CO (FADDX1_RVT)             0.10       2.16 r
+  intadd_5/U48/CO (FADDX1_RVT)             0.10       2.25 r
+  intadd_5/U47/CO (FADDX1_RVT)             0.10       2.35 r
+  intadd_5/U46/CO (FADDX1_RVT)             0.10       2.45 r
+  intadd_5/U45/CO (FADDX1_RVT)             0.10       2.54 r
+  intadd_5/U44/CO (FADDX1_RVT)             0.10       2.64 r
+  intadd_5/U43/CO (FADDX1_RVT)             0.10       2.73 r
+  intadd_5/U42/CO (FADDX1_RVT)             0.10       2.83 r
+  intadd_5/U41/CO (FADDX1_RVT)             0.10       2.93 r
+  intadd_5/U40/CO (FADDX1_RVT)             0.10       3.02 r
+  intadd_5/U39/CO (FADDX1_RVT)             0.10       3.12 r
+  intadd_5/U38/CO (FADDX1_RVT)             0.10       3.21 r
+  intadd_5/U37/CO (FADDX1_RVT)             0.10       3.31 r
+  intadd_5/U36/CO (FADDX1_RVT)             0.10       3.40 r
+  intadd_5/U35/CO (FADDX1_RVT)             0.10       3.50 r
+  intadd_5/U34/CO (FADDX1_RVT)             0.10       3.60 r
+  intadd_5/U33/CO (FADDX1_RVT)             0.10       3.69 r
+  intadd_5/U32/CO (FADDX1_RVT)             0.10       3.79 r
+  intadd_5/U31/CO (FADDX1_RVT)             0.10       3.88 r
+  intadd_5/U30/CO (FADDX1_RVT)             0.10       3.98 r
+  intadd_5/U29/CO (FADDX1_RVT)             0.10       4.08 r
+  intadd_5/U28/CO (FADDX1_RVT)             0.10       4.17 r
+  intadd_5/U27/CO (FADDX1_RVT)             0.10       4.27 r
+  intadd_5/U26/CO (FADDX1_RVT)             0.10       4.36 r
+  intadd_5/U25/CO (FADDX1_RVT)             0.10       4.46 r
+  intadd_5/U24/CO (FADDX1_RVT)             0.10       4.55 r
+  intadd_5/U23/CO (FADDX1_RVT)             0.10       4.65 r
+  intadd_5/U22/CO (FADDX1_RVT)             0.10       4.75 r
+  intadd_5/U21/CO (FADDX1_RVT)             0.10       4.84 r
+  intadd_5/U20/CO (FADDX1_RVT)             0.10       4.94 r
+  intadd_5/U19/CO (FADDX1_RVT)             0.10       5.03 r
+  intadd_5/U18/CO (FADDX1_RVT)             0.10       5.13 r
+  intadd_5/U17/CO (FADDX1_RVT)             0.10       5.23 r
+  intadd_5/U16/CO (FADDX1_RVT)             0.10       5.32 r
+  intadd_5/U15/CO (FADDX1_RVT)             0.10       5.42 r
+  intadd_5/U14/CO (FADDX1_RVT)             0.10       5.51 r
+  intadd_5/U13/CO (FADDX1_RVT)             0.10       5.61 r
+  intadd_5/U12/CO (FADDX1_RVT)             0.10       5.70 r
+  intadd_5/U11/CO (FADDX1_RVT)             0.10       5.80 r
+  intadd_5/U10/CO (FADDX1_RVT)             0.10       5.90 r
+  intadd_5/U9/CO (FADDX1_RVT)              0.10       5.99 r
+  intadd_5/U8/CO (FADDX1_RVT)              0.10       6.09 r
+  intadd_5/U7/CO (FADDX1_RVT)              0.10       6.18 r
+  intadd_5/U6/CO (FADDX1_RVT)              0.10       6.28 r
+  intadd_5/U5/CO (FADDX1_RVT)              0.10       6.38 r
+  intadd_5/U4/CO (FADDX1_RVT)              0.10       6.47 r
+  intadd_5/U3/CO (FADDX1_RVT)              0.10       6.57 r
+  intadd_5/U2/CO (FADDX1_RVT)              0.09       6.66 r
+  U473/Y (XOR2X1_RVT)                      0.12       6.78 f
+  U698/SO (HADDX1_RVT)                     0.10       6.88 r
+  U700/Y (AO22X1_RVT)                      0.06       6.94 r
+  U701/Y (OR2X1_RVT)                       0.05       6.99 r
+  Delay3_out1_reg[63]/D (DFFX1_RVT)        0.00       6.99 r
+  data arrival time                                   6.99
+
+  clock clk (rise edge)                   11.00      11.00
+  clock network delay (ideal)              0.00      11.00
+  Delay3_out1_reg[63]/CLK (DFFX1_RVT)      0.00      11.00 r
+  library setup time                      -0.05      10.95
+  data required time                                 10.95
+  -----------------------------------------------------------
+  data required time                                 10.95
+  data arrival time                                  -6.99
+  -----------------------------------------------------------
+  slack (MET)                                         3.96
+
+
+1

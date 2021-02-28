@@ -1,0 +1,9 @@
+EXPORTS
+DPI_gm_homework1_ref_initialize
+DPI_gm_homework1_ref_reset
+DPI_gm_homework1_ref_output
+DPI_gm_homework1_ref_update
+DPI_gm_homework1_ref_terminate
+
+
+gm_homework1_ref_GetCAPIStaticMap

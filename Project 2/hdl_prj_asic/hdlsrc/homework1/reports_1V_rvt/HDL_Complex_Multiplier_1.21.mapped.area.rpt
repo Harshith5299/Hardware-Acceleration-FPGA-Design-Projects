@@ -1,0 +1,31 @@
+ 
+****************************************
+Report : area
+Design : HDL_Complex_Multiplier
+Version: P-2019.03-SP3
+Date   : Tue Feb 23 12:28:32 2021
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    saed32rvt_ss0p95v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db)
+
+Number of ports:                          199
+Number of nets:                          1653
+Number of cells:                         1505
+Number of combinational cells:           1304
+Number of sequential cells:               195
+Number of macros/black boxes:               0
+Number of buf/inv:                        152
+Number of references:                      34
+
+Combinational area:               3032.954479
+Buf/Inv area:                      212.464385
+Noncombinational area:            1290.543274
+Macro/Black Box area:                0.000000
+Net Interconnect area:            1037.818931
+
+Total cell area:                  4323.497753
+Total area:                       5361.316684
+1

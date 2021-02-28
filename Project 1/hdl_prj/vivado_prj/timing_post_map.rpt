@@ -1,0 +1,1092 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Feb  2 16:19:27 2021
+| Host         : LAPTOP-OVAAUI3G running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 3 -nworst 3 -name timing_post_map -file timing_post_map.rpt
+| Design       : HDL_Complex_Multiplier
+| Device       : 7vx485t-ffg1761
+| Speed File   : -2  PRODUCTION 1.12 2014-09-11
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 50 input ports with no input delay specified. (HIGH)
+
+In1_im[0]
+In1_im[10]
+In1_im[11]
+In1_im[1]
+In1_im[2]
+In1_im[3]
+In1_im[4]
+In1_im[5]
+In1_im[6]
+In1_im[7]
+In1_im[8]
+In1_im[9]
+In1_re[0]
+In1_re[10]
+In1_re[11]
+In1_re[1]
+In1_re[2]
+In1_re[3]
+In1_re[4]
+In1_re[5]
+In1_re[6]
+In1_re[7]
+In1_re[8]
+In1_re[9]
+In2_im[0]
+In2_im[10]
+In2_im[11]
+In2_im[1]
+In2_im[2]
+In2_im[3]
+In2_im[4]
+In2_im[5]
+In2_im[6]
+In2_im[7]
+In2_im[8]
+In2_im[9]
+In2_re[0]
+In2_re[10]
+In2_re[11]
+In2_re[1]
+In2_re[2]
+In2_re[3]
+In2_re[4]
+In2_re[5]
+In2_re[6]
+In2_re[7]
+In2_re[8]
+In2_re[9]
+clk_enable
+reset
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 50 ports with no output delay specified. (HIGH)
+
+Out1_im[0]
+Out1_im[10]
+Out1_im[11]
+Out1_im[12]
+Out1_im[13]
+Out1_im[14]
+Out1_im[15]
+Out1_im[16]
+Out1_im[17]
+Out1_im[18]
+Out1_im[19]
+Out1_im[1]
+Out1_im[20]
+Out1_im[21]
+Out1_im[22]
+Out1_im[23]
+Out1_im[24]
+Out1_im[2]
+Out1_im[3]
+Out1_im[4]
+Out1_im[5]
+Out1_im[6]
+Out1_im[7]
+Out1_im[8]
+Out1_im[9]
+Out1_re[0]
+Out1_re[10]
+Out1_re[11]
+Out1_re[12]
+Out1_re[13]
+Out1_re[14]
+Out1_re[15]
+Out1_re[16]
+Out1_re[17]
+Out1_re[18]
+Out1_re[19]
+Out1_re[1]
+Out1_re[20]
+Out1_re[21]
+Out1_re[22]
+Out1_re[23]
+Out1_re[24]
+Out1_re[2]
+Out1_re[3]
+Out1_re[4]
+Out1_re[5]
+Out1_re[6]
+Out1_re[7]
+Out1_re[8]
+Out1_re[9]
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      8.510        0.000                      0                  146        0.261        0.000                      0                  146        4.650        0.000                       0                    54  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock  Waveform(ns)       Period(ns)      Frequency(MHz)
+-----  ------------       ----------      --------------
+MWCLK  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+MWCLK               8.510        0.000                      0                  146        0.261        0.000                      0                  146        4.650        0.000                       0                    54  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| User Ignored Path Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+
+
+------------------------------------------------------------------------------------------------
+| Unconstrained Path Table
+| ------------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock    
+----------    ----------    --------    
+(none)                                    
+(none)        MWCLK                       
+(none)                      MWCLK         
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  MWCLK
+  To Clock:  MWCLK
+
+Setup :            0  Failing Endpoints,  Worst Slack        8.510ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.261ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.650ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             8.510ns  (required time - arrival time)
+  Source:                 Product2_out1_1_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Delay8_out1_reg/PCIN[0]
+                            (rising edge-triggered cell DSP48E1 clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             MWCLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (MWCLK rise@10.000ns - MWCLK rise@0.000ns)
+  Data Path Delay:        0.433ns  (logic 0.383ns (88.453%)  route 0.050ns (11.547%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 10.510 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.537     0.537    clk
+                         DSP48E1                                      r  Product2_out1_1_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_PCOUT[0])
+                                                      0.383     0.920 r  Product2_out1_1_reg/PCOUT[0]
+                         net (fo=1, unplaced)         0.050     0.970    Product2_out1_1_reg_n_153
+                         DSP48E1                                      r  Delay8_out1_reg/PCIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)     10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=53, unset)           0.510    10.510    clk
+                         DSP48E1                                      r  Delay8_out1_reg/CLK
+                         clock pessimism              0.000    10.510    
+                         clock uncertainty           -0.035    10.475    
+                         DSP48E1 (Setup_dsp48e1_CLK_PCIN[0])
+                                                     -0.995     9.480    Delay8_out1_reg
+  -------------------------------------------------------------------
+                         required time                          9.480    
+                         arrival time                          -0.970    
+  -------------------------------------------------------------------
+                         slack                                  8.510    
+
+Slack (MET) :             8.510ns  (required time - arrival time)
+  Source:                 Product2_out1_1_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Delay8_out1_reg/PCIN[0]
+                            (rising edge-triggered cell DSP48E1 clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             MWCLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (MWCLK rise@10.000ns - MWCLK rise@0.000ns)
+  Data Path Delay:        0.433ns  (logic 0.383ns (88.453%)  route 0.050ns (11.547%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 10.510 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.537     0.537    clk
+                         DSP48E1                                      r  Product2_out1_1_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_PCOUT[0])
+                                                      0.383     0.920 f  Product2_out1_1_reg/PCOUT[0]
+                         net (fo=1, unplaced)         0.050     0.970    Product2_out1_1_reg_n_153
+                         DSP48E1                                      f  Delay8_out1_reg/PCIN[0]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)     10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=53, unset)           0.510    10.510    clk
+                         DSP48E1                                      r  Delay8_out1_reg/CLK
+                         clock pessimism              0.000    10.510    
+                         clock uncertainty           -0.035    10.475    
+                         DSP48E1 (Setup_dsp48e1_CLK_PCIN[0])
+                                                     -0.995     9.480    Delay8_out1_reg
+  -------------------------------------------------------------------
+                         required time                          9.480    
+                         arrival time                          -0.970    
+  -------------------------------------------------------------------
+                         slack                                  8.510    
+
+Slack (MET) :             8.510ns  (required time - arrival time)
+  Source:                 Product2_out1_1_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Delay8_out1_reg/PCIN[10]
+                            (rising edge-triggered cell DSP48E1 clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             MWCLK
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (MWCLK rise@10.000ns - MWCLK rise@0.000ns)
+  Data Path Delay:        0.433ns  (logic 0.383ns (88.453%)  route 0.050ns (11.547%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.027ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns = ( 10.510 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.537ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.537     0.537    clk
+                         DSP48E1                                      r  Product2_out1_1_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_PCOUT[10])
+                                                      0.383     0.920 r  Product2_out1_1_reg/PCOUT[10]
+                         net (fo=1, unplaced)         0.050     0.970    Product2_out1_1_reg_n_143
+                         DSP48E1                                      r  Delay8_out1_reg/PCIN[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)     10.000    10.000 r  
+                                                      0.000    10.000 r  clk (IN)
+                         net (fo=53, unset)           0.510    10.510    clk
+                         DSP48E1                                      r  Delay8_out1_reg/CLK
+                         clock pessimism              0.000    10.510    
+                         clock uncertainty           -0.035    10.475    
+                         DSP48E1 (Setup_dsp48e1_CLK_PCIN[10])
+                                                     -0.995     9.480    Delay8_out1_reg
+  -------------------------------------------------------------------
+                         required time                          9.480    
+                         arrival time                          -0.970    
+  -------------------------------------------------------------------
+                         slack                                  8.510    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.261ns  (arrival time - required time)
+  Source:                 Delay8_out1_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Delay5_out1_im_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             MWCLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (MWCLK rise@0.000ns - MWCLK rise@0.000ns)
+  Data Path Delay:        0.338ns  (logic 0.107ns (31.628%)  route 0.231ns (68.372%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.280ns
+    Source Clock Delay      (SCD):    0.266ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.266     0.266    clk
+                         DSP48E1                                      r  Delay8_out1_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[0])
+                                                      0.107     0.373 r  Delay8_out1_reg/P[0]
+                         net (fo=1, unplaced)         0.231     0.605    Delay8_out1_reg_n_105
+                         FDRE                                         r  Delay5_out1_im_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.280     0.280    clk
+                         FDRE                                         r  Delay5_out1_im_reg[0]/C
+                         clock pessimism              0.000     0.280    
+                         FDRE (Hold_fdre_C_D)         0.063     0.343    Delay5_out1_im_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -0.343    
+                         arrival time                           0.605    
+  -------------------------------------------------------------------
+                         slack                                  0.261    
+
+Slack (MET) :             0.261ns  (arrival time - required time)
+  Source:                 Delay8_out1_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Delay5_out1_im_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             MWCLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (MWCLK rise@0.000ns - MWCLK rise@0.000ns)
+  Data Path Delay:        0.338ns  (logic 0.107ns (31.628%)  route 0.231ns (68.372%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.280ns
+    Source Clock Delay      (SCD):    0.266ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.266     0.266    clk
+                         DSP48E1                                      r  Delay8_out1_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[0])
+                                                      0.107     0.373 f  Delay8_out1_reg/P[0]
+                         net (fo=1, unplaced)         0.231     0.605    Delay8_out1_reg_n_105
+                         FDRE                                         f  Delay5_out1_im_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.280     0.280    clk
+                         FDRE                                         r  Delay5_out1_im_reg[0]/C
+                         clock pessimism              0.000     0.280    
+                         FDRE (Hold_fdre_C_D)         0.063     0.343    Delay5_out1_im_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -0.343    
+                         arrival time                           0.605    
+  -------------------------------------------------------------------
+                         slack                                  0.261    
+
+Slack (MET) :             0.261ns  (arrival time - required time)
+  Source:                 Delay8_out1_reg/CLK
+                            (rising edge-triggered cell DSP48E1 clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Delay5_out1_im_reg[10]/D
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             MWCLK
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (MWCLK rise@0.000ns - MWCLK rise@0.000ns)
+  Data Path Delay:        0.338ns  (logic 0.107ns (31.628%)  route 0.231ns (68.372%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.014ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.280ns
+    Source Clock Delay      (SCD):    0.266ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.266     0.266    clk
+                         DSP48E1                                      r  Delay8_out1_reg/CLK
+  -------------------------------------------------------------------    -------------------
+                         DSP48E1 (Prop_dsp48e1_CLK_P[10])
+                                                      0.107     0.373 r  Delay8_out1_reg/P[10]
+                         net (fo=1, unplaced)         0.231     0.605    Delay8_out1_reg_n_95
+                         FDRE                                         r  Delay5_out1_im_reg[10]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.280     0.280    clk
+                         FDRE                                         r  Delay5_out1_im_reg[10]/C
+                         clock pessimism              0.000     0.280    
+                         FDRE (Hold_fdre_C_D)         0.063     0.343    Delay5_out1_im_reg[10]
+  -------------------------------------------------------------------
+                         required time                         -0.343    
+                         arrival time                           0.605    
+  -------------------------------------------------------------------
+                         slack                                  0.261    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         MWCLK
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { clk }
+
+Check Type        Corner  Lib Pin      Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location  Pin
+Min Period        n/a     DSP48E1/CLK  n/a            1.538         10.000      8.462                Delay9_out1_reg/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            1.538         10.000      8.462                Product1_out1_1_reg/CLK
+Min Period        n/a     DSP48E1/CLK  n/a            1.538         10.000      8.462                Product2_out1_1_reg/CLK
+Low Pulse Width   Slow    FDRE/C       n/a            0.350         5.000       4.650                Delay5_out1_im_reg[0]/C
+Low Pulse Width   Fast    FDRE/C       n/a            0.350         5.000       4.650                Delay5_out1_im_reg[0]/C
+Low Pulse Width   Slow    FDRE/C       n/a            0.350         5.000       4.650                Delay5_out1_im_reg[10]/C
+High Pulse Width  Slow    FDRE/C       n/a            0.350         5.000       4.650                Delay5_out1_im_reg[0]/C
+High Pulse Width  Fast    FDRE/C       n/a            0.350         5.000       4.650                Delay5_out1_im_reg[0]/C
+High Pulse Width  Slow    FDRE/C       n/a            0.350         5.000       4.650                Delay5_out1_im_reg[10]/C
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  
+
+Max Delay             1 Endpoint
+Min Delay             1 Endpoint
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.537ns  (logic 0.000ns (0.000%)  route 0.537ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=69, unset)           0.537     0.537    clk_enable
+                                                                      r  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.537ns  (logic 0.000ns (0.000%)  route 0.537ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  clk_enable (IN)
+                         net (fo=69, unset)           0.537     0.537    clk_enable
+                                                                      f  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Fast Process Corner
+  Data Path Delay:        0.280ns  (logic 0.000ns (0.000%)  route 0.280ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=69, unset)           0.280     0.280    clk_enable
+                                                                      r  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.266ns  (logic 0.000ns (0.000%)  route 0.266ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=69, unset)           0.266     0.266    clk_enable
+                                                                      r  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.266ns  (logic 0.000ns (0.000%)  route 0.266ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  clk_enable (IN)
+                         net (fo=69, unset)           0.266     0.266    clk_enable
+                                                                      f  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            ce_out
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Slow Process Corner
+  Data Path Delay:        0.510ns  (logic 0.000ns (0.000%)  route 0.510ns (100.000%))
+  Logic Levels:           0  
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=69, unset)           0.510     0.510    clk_enable
+                                                                      r  ce_out (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  MWCLK
+  To Clock:  
+
+Max Delay            50 Endpoints
+Min Delay            50 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 Delay5_out1_im_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Out1_im[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.786ns  (logic 0.249ns (31.679%)  route 0.537ns (68.321%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.537     0.537    clk
+                         FDRE                                         r  Delay5_out1_im_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.249     0.786 r  Delay5_out1_im_reg[0]/Q
+                         net (fo=0)                   0.537     1.323    Out1_im[0]
+                                                                      r  Out1_im[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Delay5_out1_im_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Out1_im[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.786ns  (logic 0.249ns (31.679%)  route 0.537ns (68.321%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.537     0.537    clk
+                         FDRE                                         r  Delay5_out1_im_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.249     0.786 f  Delay5_out1_im_reg[0]/Q
+                         net (fo=0)                   0.537     1.323    Out1_im[0]
+                                                                      f  Out1_im[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Delay5_out1_im_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Out1_im[10]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Max at Slow Process Corner
+  Data Path Delay:        0.786ns  (logic 0.249ns (31.679%)  route 0.537ns (68.321%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.537     0.537    clk
+                         FDRE                                         r  Delay5_out1_im_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.249     0.786 r  Delay5_out1_im_reg[10]/Q
+                         net (fo=0)                   0.537     1.323    Out1_im[10]
+                                                                      r  Out1_im[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 Delay5_out1_im_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Out1_im[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.380ns  (logic 0.114ns (29.976%)  route 0.266ns (70.024%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.266     0.266    clk
+                         FDRE                                         r  Delay5_out1_im_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.114     0.380 r  Delay5_out1_im_reg[0]/Q
+                         net (fo=0)                   0.266     0.647    Out1_im[0]
+                                                                      r  Out1_im[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Delay5_out1_im_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Out1_im[0]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.380ns  (logic 0.114ns (29.976%)  route 0.266ns (70.024%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.266     0.266    clk
+                         FDRE                                         r  Delay5_out1_im_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.114     0.380 f  Delay5_out1_im_reg[0]/Q
+                         net (fo=0)                   0.266     0.647    Out1_im[0]
+                                                                      f  Out1_im[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+Slack:                    inf
+  Source:                 Delay5_out1_im_reg[10]/C
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            Out1_im[10]
+                            (output port)
+  Path Group:             (none)
+  Path Type:              Min at Fast Process Corner
+  Data Path Delay:        0.380ns  (logic 0.114ns (29.976%)  route 0.266ns (70.024%))
+  Logic Levels:           0  
+  Clock Uncertainty:      0.025ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.050ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.266     0.266    clk
+                         FDRE                                         r  Delay5_out1_im_reg[10]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.114     0.380 r  Delay5_out1_im_reg[10]/Q
+                         net (fo=0)                   0.266     0.647    Out1_im[10]
+                                                                      r  Out1_im[10] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+
+--------------------------------------------------------------------------------------
+Path Group:  (none)
+From Clock:  
+  To Clock:  MWCLK
+
+Max Delay           328 Endpoints
+Min Delay           328 Endpoints
+--------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            Delay5_out1_im_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        0.537ns  (logic 0.000ns (0.000%)  route 0.537ns (100.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.510ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=69, unset)           0.537     0.537    clk_enable
+                         FDRE                                         r  Delay5_out1_im_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.510     0.510    clk
+                         FDRE                                         r  Delay5_out1_im_reg[0]/C
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            Delay5_out1_im_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        0.537ns  (logic 0.000ns (0.000%)  route 0.537ns (100.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.510ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=69, unset)           0.537     0.537    clk_enable
+                         FDRE                                         r  Delay5_out1_im_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.510     0.510    clk
+                         FDRE                                         r  Delay5_out1_im_reg[0]/C
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            Delay5_out1_im_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Setup (Max at Slow Process Corner)
+  Data Path Delay:        0.537ns  (logic 0.000ns (0.000%)  route 0.537ns (100.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.510ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.510ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  clk_enable (IN)
+                         net (fo=69, unset)           0.537     0.537    clk_enable
+                         FDRE                                         f  Delay5_out1_im_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.510     0.510    clk
+                         FDRE                                         r  Delay5_out1_im_reg[0]/C
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            Delay5_out1_im_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.266ns  (logic 0.000ns (0.000%)  route 0.266ns (100.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.280ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.280ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=69, unset)           0.266     0.266    clk_enable
+                         FDRE                                         r  Delay5_out1_im_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.280     0.280    clk
+                         FDRE                                         r  Delay5_out1_im_reg[0]/C
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            Delay5_out1_im_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.266ns  (logic 0.000ns (0.000%)  route 0.266ns (100.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.280ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.280ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 r  clk_enable (IN)
+                         net (fo=69, unset)           0.266     0.266    clk_enable
+                         FDRE                                         r  Delay5_out1_im_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.280     0.280    clk
+                         FDRE                                         r  Delay5_out1_im_reg[0]/C
+
+Slack:                    inf
+  Source:                 clk_enable
+                            (input port)
+  Destination:            Delay5_out1_im_reg[0]/CE
+                            (rising edge-triggered cell FDRE clocked by MWCLK  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             (none)
+  Path Type:              Hold (Min at Fast Process Corner)
+  Data Path Delay:        0.266ns  (logic 0.000ns (0.000%)  route 0.266ns (100.000%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.280ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.280ns
+    Source Clock Delay      (SCD):    0.000ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                                                      0.000     0.000 f  clk_enable (IN)
+                         net (fo=69, unset)           0.266     0.266    clk_enable
+                         FDRE                                         f  Delay5_out1_im_reg[0]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock MWCLK rise edge)      0.000     0.000 r  
+                                                      0.000     0.000 r  clk (IN)
+                         net (fo=53, unset)           0.280     0.280    clk
+                         FDRE                                         r  Delay5_out1_im_reg[0]/C
+
+
+
+
+

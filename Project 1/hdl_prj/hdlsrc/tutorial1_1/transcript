@@ -1,0 +1,98 @@
+proc vsimulink {args} {
+  lappend sllibarg -foreign \{simlinkserver \{C:/Program Files/MATLAB/R2020b/toolbox/edalink/extensions/modelsim/windows32/liblfmhdls_gcc421vc12.dll\}
+  set socket 55943
+  if {[catch {lsearch -exact $args -socket} idx]==0  && $idx >= 0} {
+    set socket [lindex $args [expr {$idx + 1}]]
+    set args [lreplace $args $idx [expr {$idx + 1}]]
+  }
+  set runmode "Batch"
+  if { $runmode == "Batch" || $runmode == "Batch with Xterm"} {
+    lappend sllibarg " \; -batch"
+  }
+  append socketarg " \; -socket " "$socket"
+  lappend sllibarg $socketarg
+  lappend sllibarg \}
+  set args [linsert $args 0 vsim]
+  lappend args [join $sllibarg]
+  uplevel 1 [join $args]
+}
+proc vsimmatlab {args} {
+  lappend mllibarg -foreign \{matlabclient \{C:/Program Files/MATLAB/R2020b/toolbox/edalink/extensions/modelsim/windows32/liblfmhdlc_gcc421vc12.dll\}
+  lappend mllibarg \}
+  lappend mlinput 
+  lappend mlinput [join $args]
+  lappend mlinput [join $mllibarg]
+   set mlinput [linsert $mlinput 0 vsim]
+  uplevel 1 [join $mlinput]
+}
+proc wrapverilog {args} {
+
+  error "wrapverilog has been removed. HDL Verifier now supports Verilog models directly, without requiring a VHDL wrapper."}
+
+
+proc vsimmatlabsysobj {args} {
+  lappend sllibarg -foreign \{matlabsysobjserver \{C:/Program Files/MATLAB/R2020b/toolbox/edalink/extensions/modelsim/windows32/liblfmhdls_gcc421vc12.dll\}
+  if {[catch {lsearch -exact $args -socket} idx]==0  && $idx >= 0} {
+    set socket [lindex $args [expr {$idx + 1}]]
+    set args [lreplace $args $idx [expr {$idx + 1}]]
+    append socketarg " \; -socket " "$socket"
+    lappend sllibarg $socketarg
+  }
+  set runmode "Batch"
+  if { $runmode == "Batch" || $runmode == "Batch with Xterm"} {
+    lappend sllibarg " \; -batch"
+  }
+  lappend sllibarg \}
+  set args [linsert $args 0 vsim]
+  lappend args [join $sllibarg]
+  uplevel 1 [join $args]
+}
+do HDL_Complex_Multiplier_compile.do
+# Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+# Start time: 16:17:46 on Feb 02,2021
+# vlog HDL_Complex_Multiplier.v 
+# -- Compiling module HDL_Complex_Multiplier
+# 
+# Top level modules:
+# 	HDL_Complex_Multiplier
+# End time: 16:17:46 on Feb 02,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsimulink -voptargs=+acc  work.HDL_Complex_Multiplier
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //
+# //  Copyright 1991-2015 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# // NOT FOR CORPORATE OR PRODUCTION USE.
+# // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
+# // FOR HIGHER EDUCATION PURPOSES ONLY
+# //
+# vsim 
+# Start time: 16:17:46 on Feb 02,2021
+# Loading work.HDL_Complex_Multiplier
+# Loading C:/Program Files/MATLAB/R2020b/toolbox/edalink/extensions/modelsim/windows32/liblfmhdls_gcc421vc12.dll
+# ************************************************************************
+# HDL server has been started in batch mode. The HDL simulator will be 
+# blocked until Simulink starts cosimulation. If you do not want to run
+# in batch mode, restart the HDL simulator in a different run mode. To 
+# exit the HDL simulator without running a cosimulation session, issue 
+# the breakHdlSim('55943') command in MATLAB.
+# Simulation halt requested by foreign interface.
+set UserTimeUnit ns
+# ns
+puts ""
+puts "Ready for cosimulation..."
+
+# 
+# <EOF>
+# End time: 16:17:49 on Feb 02,2021, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0

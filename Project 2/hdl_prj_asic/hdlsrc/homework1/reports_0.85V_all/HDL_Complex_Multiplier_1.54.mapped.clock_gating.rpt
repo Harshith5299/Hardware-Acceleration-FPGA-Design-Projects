@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : clock_gating
+Design : HDL_Complex_Multiplier
+Version: P-2019.03-SP3
+Date   : Tue Feb 23 13:25:07 2021
+****************************************
+
+
+
+                             Clock Gating Summary
+          ------------------------------------------------------------
+          |    Number of Clock gating elements    |        0         |
+          |                                       |                  |
+          |    Number of Gated registers          |     0 (0.00%)    |
+          |                                       |                  |
+          |    Number of Ungated registers        |   195 (100.00%)  |
+          |                                       |                  |
+          |    Total number of registers          |      195         |
+          ------------------------------------------------------------
+
+
+
+1

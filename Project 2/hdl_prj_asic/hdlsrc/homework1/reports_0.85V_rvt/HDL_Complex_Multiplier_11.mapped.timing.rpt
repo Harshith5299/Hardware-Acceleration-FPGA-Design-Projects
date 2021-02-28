@@ -1,0 +1,95 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : HDL_Complex_Multiplier
+Version: P-2019.03-SP3
+Date   : Tue Feb 23 13:05:01 2021
+****************************************
+
+Operating Conditions: ss0p75v125c   Library: saed32rvt_ss0p75v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Delay2_out1_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Delay3_out1_reg[63]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  HDL_Complex_Multiplier
+                     8000                  saed32rvt_ss0p75v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  Delay2_out1_reg[2]/CLK (DFFX1_RVT)       0.00       0.00 r
+  Delay2_out1_reg[2]/Q (DFFX1_RVT)         0.30       0.30 f
+  U471/Y (NBUFFX4_RVT)                     0.18       0.48 f
+  U710/Y (XOR2X1_RVT)                      0.29       0.77 r
+  U711/Y (NOR2X0_RVT)                      0.16       0.94 f
+  U722/Y (OAI21X1_RVT)                     0.22       1.16 r
+  U723/Y (AOI21X1_RVT)                     0.13       1.29 f
+  U731/Y (OAI21X1_RVT)                     0.23       1.52 r
+  U770/Y (AOI21X1_RVT)                     0.17       1.69 f
+  U795/Y (OAI21X1_RVT)                     0.23       1.93 r
+  U1061/CO (FADDX1_RVT)                    0.17       2.10 r
+  U1067/CO (FADDX1_RVT)                    0.18       2.29 r
+  U1073/CO (FADDX1_RVT)                    0.18       2.47 r
+  U1079/CO (FADDX1_RVT)                    0.18       2.65 r
+  U1085/CO (FADDX1_RVT)                    0.18       2.83 r
+  U1091/CO (FADDX1_RVT)                    0.18       3.01 r
+  U1097/CO (FADDX1_RVT)                    0.18       3.20 r
+  U1103/CO (FADDX1_RVT)                    0.18       3.38 r
+  U1109/CO (FADDX1_RVT)                    0.18       3.56 r
+  U1115/CO (FADDX1_RVT)                    0.18       3.74 r
+  U1121/CO (FADDX1_RVT)                    0.18       3.93 r
+  U1127/CO (FADDX1_RVT)                    0.18       4.11 r
+  U1133/CO (FADDX1_RVT)                    0.18       4.29 r
+  U1139/CO (FADDX1_RVT)                    0.18       4.47 r
+  U1145/CO (FADDX1_RVT)                    0.18       4.65 r
+  U1151/CO (FADDX1_RVT)                    0.18       4.84 r
+  U1157/CO (FADDX1_RVT)                    0.18       5.02 r
+  U1163/CO (FADDX1_RVT)                    0.18       5.20 r
+  U1169/CO (FADDX1_RVT)                    0.18       5.38 r
+  U1175/CO (FADDX1_RVT)                    0.18       5.57 r
+  U1181/CO (FADDX1_RVT)                    0.18       5.75 r
+  U1187/CO (FADDX1_RVT)                    0.18       5.93 r
+  U1193/CO (FADDX1_RVT)                    0.18       6.11 r
+  U1199/CO (FADDX1_RVT)                    0.18       6.29 r
+  U1205/CO (FADDX1_RVT)                    0.18       6.48 r
+  U1211/CO (FADDX1_RVT)                    0.18       6.66 r
+  U1217/CO (FADDX1_RVT)                    0.18       6.84 r
+  U1223/CO (FADDX1_RVT)                    0.18       7.02 r
+  U1229/CO (FADDX1_RVT)                    0.18       7.21 r
+  U1235/CO (FADDX1_RVT)                    0.18       7.39 r
+  U1241/CO (FADDX1_RVT)                    0.18       7.57 r
+  U1247/CO (FADDX1_RVT)                    0.18       7.75 r
+  U1253/CO (FADDX1_RVT)                    0.18       7.94 r
+  U1259/CO (FADDX1_RVT)                    0.18       8.12 r
+  U1265/CO (FADDX1_RVT)                    0.18       8.30 r
+  U1276/CO (FADDX1_RVT)                    0.17       8.47 r
+  U1279/Y (XOR2X1_RVT)                     0.23       8.71 f
+  U1280/Y (NAND2X0_RVT)                    0.09       8.80 r
+  U1284/Y (NAND4X0_RVT)                    0.09       8.89 f
+  Delay3_out1_reg[63]/D (DFFX1_RVT)        0.00       8.89 f
+  data arrival time                                   8.89
+
+  clock clk (rise edge)                   11.00      11.00
+  clock network delay (ideal)              0.00      11.00
+  Delay3_out1_reg[63]/CLK (DFFX1_RVT)      0.00      11.00 r
+  library setup time                      -0.16      10.84
+  data required time                                 10.84
+  -----------------------------------------------------------
+  data required time                                 10.84
+  data arrival time                                  -8.89
+  -----------------------------------------------------------
+  slack (MET)                                         1.95
+
+
+1

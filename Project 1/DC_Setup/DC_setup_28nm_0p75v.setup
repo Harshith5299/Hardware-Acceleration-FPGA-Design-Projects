@@ -1,0 +1,94 @@
+#####################################
+# --------------------------------- #
+#  Synopsys dc_shell library setup  #
+# --------------------------------- #
+#  Fengbo Ren       (03/26/2016)    #
+#####################################
+
+# Optimization Modes
+set_leakage_optimization true
+set_dynamic_optimization true
+
+# The following must be true for the max_fanout option to work.
+set hdlin_no_group_register "true"
+
+# Identify clock gating cells in .vg
+set power_cg_auto_identify true
+
+# Elaboration template defaults.
+set template_naming_style "%s_%p"
+set template_parameter_style "%d"
+set template_separator_style "_"
+
+# ***********************************************************************
+# Note:
+# (1) The Synopsys search path should be set to point to the directories that contain 
+#     the various synthesis libraries used by Design Compiler.                                        
+# (2) Always set the target_library first
+# (3) Target_library can only contain the library that you'd like to map your designs.
+#     In other words, you can't put the synopsys designware library or any other library
+#     that has non-P&R-able cells.
+# (4) Synopsys searches the library from LEFT to RIGHT. When it finds the main library
+#     it'd like to use, it stops the searching. Therefore, always put the library that
+#     you want Synopsys to firstly choose on the left-most location of the library list.
+# (5) In the link_library, "*" means the designs/library data that already exist in the
+#     work-server's memory. This in-memory library should be linked first.
+# (6) standard.sldb is automatically included by dc_shell. No need to include it in the 
+#     synthetic library.
+# ***********************************************************************
+
+#********************** Specify Synopsys 32/28nm Generic Library ******************************
+set library_path "/usr/local/synopsys/SAED32_EDK"
+
+set search_path  "$search_path $library_path/lib/stdcell_rvt/db_nldm"
+lappend search_path "$library_path/lib/stdcell_lvt/db_nldm"
+lappend search_path "$library_path/lib/stdcell_hvt/db_nldm"
+
+#Uncomment the section to choose your operating voltage
+# Typical Voltage Operation (1V)                    
+#read_db "saed32rvt_ff1p16vn40c.db"
+#read_db "saed32rvt_ss0p95v125c.db"
+#read_db "saed32lvt_ff1p16vn40c.db"
+#read_db "saed32lvt_ss0p95v125c.db"
+#read_db "saed32hvt_ff1p16vn40c.db"
+#read_db "saed32hvt_ss0p95v125c.db"
+
+# Middle Voltage Operation (0.85V)
+#read_db "saed32rvt_ff0p95vn40c.db"
+#read_db "saed32rvt_ss0p75v125c.db"
+#read_db "saed32lvt_ff0p95vn40c.db"
+#read_db "saed32lvt_ss0p75v125c.db"
+#read_db "saed32hvt_ff0p95vn40c.db"
+#read_db "saed32hvt_ss0p75v125c.db"
+
+# Low Voltage Operation (0.75V)   
+read_db "saed32rvt_ff0p85vn40c.db"
+read_db "saed32rvt_ss0p7v125c.db"
+read_db "saed32lvt_ff0p85vn40c.db"
+read_db "saed32lvt_ss0p7v125c.db"
+read_db "saed32hvt_ff0p85vn40c.db"
+read_db "saed32hvt_ss0p7v125c.db"
+
+
+######## min_libraries should not be specified in the link_library or target_library!!!!                   
+set target_library "saed32rvt_ss0p7v125c.db"
+lappend target_library "saed32lvt_ss0p7v125c.db"
+lappend target_library "saed32hvt_ss0p7v125c.db"
+
+
+set symbol_library "class.sdb  generic.sdb" 
+set synthetic_library "dw_foundation.sldb"
+set link_library "* $target_library $synthetic_library"
+
+# Specifing min/max lib for hold/setup time check
+set_min_library  saed32rvt_ss0p7v125c.db -min_version  saed32rvt_ff0p85vn40c.db
+set_min_library  saed32lvt_ss0p7v125c.db -min_version  saed32lvt_ff0p85vn40c.db
+set_min_library  saed32hvt_ss0p7v125c.db -min_version  saed32hvt_ff0p85vn40c.db
+
+# Set Vth group for power optimization using multi-Vth devices
+set_attribute [get_lib saed32rvt_ss0p7v125c] default_threshold_voltage_group nvt
+set_attribute [get_lib saed32rvt_ff0p85vn40c] default_threshold_voltage_group nvt
+set_attribute [get_lib saed32lvt_ss0p7v125c] default_threshold_voltage_group lvt
+set_attribute [get_lib saed32lvt_ff0p85vn40c] default_threshold_voltage_group lvt
+set_attribute [get_lib saed32hvt_ss0p7v125c] default_threshold_voltage_group hvt
+set_attribute [get_lib saed32hvt_ff0p85vn40c] default_threshold_voltage_group hvt

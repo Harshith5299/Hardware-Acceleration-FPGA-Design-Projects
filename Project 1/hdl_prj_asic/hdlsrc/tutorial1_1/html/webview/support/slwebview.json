@@ -1,0 +1,26 @@
+{
+ "baseUrl":"support/slwebview_files",
+ "homeHid":2,
+ "initialElement":"",
+ "sections":[
+  {
+   "hid":1,
+   "sid":"tutorial1_1",
+   "name":"tutorial1_1",
+   "fullname":"tutorial1_1",
+   "label":"tutorial1_1*",
+   "parent":0,
+   "descendants":[
+    2
+   ],
+   "hierarchyUrl":"support/slwebview_files/tutorial1_1_h_1.json",
+   "backingUrl":"support/slwebview_files/tutorial1_1_m.json"
+  }
+ ],
+ "optViews":[
+ ],
+ "display":{
+  "informer":false
+ },
+ "iconsUrl":"support/slwebview_files/tutorial1_1_191_icons.css"
+}

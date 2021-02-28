@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Feb  2 16:18:24 2021
+# Process ID: 18368
+# Current directory: C:/hdl_prj/vivado_prj/HDL_Complex_Multiplier_vivado.runs/synth_1
+# Command line: vivado.exe -log HDL_Complex_Multiplier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source HDL_Complex_Multiplier.tcl
+# Log file: C:/hdl_prj/vivado_prj/HDL_Complex_Multiplier_vivado.runs/synth_1/HDL_Complex_Multiplier.vds
+# Journal file: C:/hdl_prj/vivado_prj/HDL_Complex_Multiplier_vivado.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source HDL_Complex_Multiplier.tcl -notrace

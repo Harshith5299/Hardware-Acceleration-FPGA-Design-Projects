@@ -1,0 +1,18 @@
+open_system('homework1');
+open_system('gm_homework1');
+cs.HiliteType = 'user2';
+cs.ForegroundColor = 'black';
+cs.BackgroundColor = 'gray';
+set_param(0, 'HiliteAncestorsData', cs);
+hilite_system('gm_homework1/HDL_Complex_Multiplier/Add', 'user2');
+annotate_port('gm_homework1/HDL_Complex_Multiplier/Add', 1, 1, 'Block not characterized');
+hilite_system('homework1/HDL_Complex_Multiplier/Add', 'user2');
+annotate_port('homework1/HDL_Complex_Multiplier/Add', 1, 1, 'Block not characterized');
+cs.HiliteType = 'user2';
+cs.ForegroundColor = 'black';
+cs.BackgroundColor = 'gray';
+set_param(0, 'HiliteAncestorsData', cs);
+hilite_system('gm_homework1/HDL_Complex_Multiplier/Bitwise Operator2', 'user2');
+annotate_port('gm_homework1/HDL_Complex_Multiplier/Bitwise Operator2', 1, 1, 'Block not characterized for this configuration');
+hilite_system('homework1/HDL_Complex_Multiplier/Bitwise Operator2', 'user2');
+annotate_port('homework1/HDL_Complex_Multiplier/Bitwise Operator2', 1, 1, 'Block not characterized for this configuration');

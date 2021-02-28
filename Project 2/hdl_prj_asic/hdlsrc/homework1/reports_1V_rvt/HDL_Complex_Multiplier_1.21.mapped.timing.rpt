@@ -1,0 +1,64 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : HDL_Complex_Multiplier
+Version: P-2019.03-SP3
+Date   : Tue Feb 23 12:28:32 2021
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Delay2_out1_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Delay3_out1_reg[45]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  HDL_Complex_Multiplier
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  Delay2_out1_reg[2]/CLK (DFFX2_RVT)       0.00       0.00 r
+  Delay2_out1_reg[2]/QN (DFFX2_RVT)        0.13       0.13 r
+  U823/Y (INVX4_RVT)                       0.02       0.15 f
+  U533/Y (NBUFFX16_RVT)                    0.06       0.21 f
+  U861/Y (XOR2X2_RVT)                      0.11       0.31 r
+  U631/Y (NOR2X0_RVT)                      0.08       0.40 f
+  U516/Y (OAI21X1_RVT)                     0.12       0.51 r
+  U870/Y (AO21X1_RVT)                      0.09       0.60 r
+  U871/Y (NAND2X0_RVT)                     0.04       0.64 f
+  U879/Y (NAND2X0_RVT)                     0.04       0.68 r
+  U880/Y (AOI21X1_RVT)                     0.08       0.76 f
+  U905/Y (OA21X1_RVT)                      0.08       0.83 f
+  U580/Y (INVX4_RVT)                       0.05       0.89 r
+  U1478/Y (NAND2X0_RVT)                    0.04       0.92 f
+  U1480/Y (NAND2X0_RVT)                    0.05       0.97 r
+  U472/Y (XOR2X1_RVT)                      0.11       1.08 f
+  U1482/Y (NAND2X0_RVT)                    0.04       1.12 r
+  U1487/Y (NAND2X0_RVT)                    0.03       1.16 f
+  Delay3_out1_reg[45]/D (DFFX1_RVT)        0.00       1.16 f
+  data arrival time                                   1.16
+
+  clock clk (rise edge)                    1.21       1.21
+  clock network delay (ideal)              0.00       1.21
+  Delay3_out1_reg[45]/CLK (DFFX1_RVT)      0.00       1.21 r
+  library setup time                      -0.05       1.16
+  data required time                                  1.16
+  -----------------------------------------------------------
+  data required time                                  1.16
+  data arrival time                                  -1.16
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

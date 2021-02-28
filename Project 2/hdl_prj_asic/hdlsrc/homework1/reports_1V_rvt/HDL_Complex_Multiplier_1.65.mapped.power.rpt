@@ -1,0 +1,53 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : HDL_Complex_Multiplier
+Version: P-2019.03-SP3
+Date   : Tue Feb 23 12:29:58 2021
+****************************************
+
+
+Library(s) Used:
+
+    saed32rvt_ss0p95v125c (File: /usr/local/synopsys/SAED32_EDK/lib/stdcell_rvt/db_nldm/saed32rvt_ss0p95v125c.db)
+
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+HDL_Complex_Multiplier 8000              saed32rvt_ss0p95v125c
+
+
+Global Operating Voltage = 0.95 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  = 770.6795 uW   (96%)
+  Net Switching Power  =  30.7145 uW    (4%)
+                         ---------
+Total Dynamic Power    = 801.3940 uW  (100%)
+
+Cell Leakage Power     = 179.0852 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.0000            0.0000            0.0000            0.0000  (   0.00%)
+register         713.5285            5.0775        1.0036e+08          818.9649  (  83.53%)
+sequential         0.0000            0.0000            0.0000            0.0000  (   0.00%)
+combinational     57.1512           25.6370        7.8726e+07          161.5143  (  16.47%)
+--------------------------------------------------------------------------------------------------
+Total            770.6797 uW        30.7145 uW     1.7909e+08 pW       980.4792 uW
+1

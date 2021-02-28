@@ -1,0 +1,83 @@
+ 
+****************************************
+Report : qor
+Design : HDL_Complex_Multiplier
+Version: P-2019.03-SP3
+Date   : Tue Feb 23 14:08:39 2021
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              15.00
+  Critical Path Length:          1.56
+  Critical Path Slack:           0.00
+  Critical Path Clk Period:      1.65
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:               1564
+  Buf/Inv Cell Count:             193
+  Buf Cell Count:                   9
+  Inv Cell Count:                 184
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:      1369
+  Sequential Cell Count:          195
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:     2981.363270
+  Noncombinational Area:  1292.830569
+  Buf/Inv Area:            268.630209
+  Total Buffer Area:            29.99
+  Total Inverter Area:         238.64
+  Macro/Black Box Area:      0.000000
+  Net Area:               1055.822701
+  -----------------------------------
+  Cell Area:              4274.193839
+  Design Area:            5330.016541
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:          1749
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: rhel77vdi012
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.33
+  Logic Optimization:                  3.68
+  Mapping Optimization:               30.47
+  -----------------------------------------
+  Overall Compile Time:               67.78
+  Overall Compile Wall Clock Time:    69.38
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

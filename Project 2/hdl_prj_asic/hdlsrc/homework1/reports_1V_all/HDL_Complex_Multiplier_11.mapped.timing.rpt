@@ -1,0 +1,117 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : HDL_Complex_Multiplier
+Version: P-2019.03-SP3
+Date   : Tue Feb 23 12:47:15 2021
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Delay2_out1_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Delay3_out1_reg[63]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  HDL_Complex_Multiplier
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  Delay2_out1_reg[2]/CLK (DFFX1_HVT)       0.00       0.00 r
+  Delay2_out1_reg[2]/Q (DFFX1_HVT)         0.24       0.24 f
+  U534/Y (NBUFFX4_HVT)                     0.15       0.39 f
+  U528/Y (INVX4_HVT)                       0.11       0.50 r
+  U540/Y (AO22X1_HVT)                      0.14       0.64 r
+  U1127/CO (FADDX1_HVT)                    0.16       0.81 r
+  U551/CO (FADDX1_HVT)                     0.14       0.95 r
+  U559/CO (FADDX1_HVT)                     0.14       1.09 r
+  U567/CO (FADDX1_HVT)                     0.14       1.24 r
+  U467/CO (FADDX1_HVT)                     0.14       1.38 r
+  U468/CO (FADDX1_HVT)                     0.14       1.52 r
+  U526/CO (FADDX1_RVT)                     0.10       1.62 r
+  U525/CO (FADDX1_RVT)                     0.10       1.72 r
+  U524/CO (FADDX1_RVT)                     0.10       1.81 r
+  U469/CO (FADDX1_HVT)                     0.14       1.95 r
+  U523/CO (FADDX1_RVT)                     0.10       2.05 r
+  U522/CO (FADDX1_RVT)                     0.10       2.15 r
+  U521/CO (FADDX1_RVT)                     0.10       2.24 r
+  U470/CO (FADDX1_HVT)                     0.14       2.38 r
+  U520/CO (FADDX1_RVT)                     0.10       2.48 r
+  U519/CO (FADDX1_RVT)                     0.10       2.57 r
+  U471/CO (FADDX1_HVT)                     0.14       2.71 r
+  U518/CO (FADDX1_RVT)                     0.10       2.81 r
+  U517/CO (FADDX1_RVT)                     0.10       2.91 r
+  U516/CO (FADDX1_RVT)                     0.10       3.00 r
+  U472/CO (FADDX1_HVT)                     0.14       3.14 r
+  U515/CO (FADDX1_RVT)                     0.10       3.24 r
+  U514/CO (FADDX1_RVT)                     0.10       3.34 r
+  U513/CO (FADDX1_RVT)                     0.10       3.43 r
+  U473/CO (FADDX1_HVT)                     0.14       3.57 r
+  U512/CO (FADDX1_RVT)                     0.10       3.67 r
+  U511/CO (FADDX1_RVT)                     0.10       3.76 r
+  U510/CO (FADDX1_RVT)                     0.10       3.86 r
+  U474/CO (FADDX1_HVT)                     0.14       3.99 r
+  U509/CO (FADDX1_RVT)                     0.10       4.10 r
+  U508/CO (FADDX1_RVT)                     0.10       4.19 r
+  U475/CO (FADDX1_HVT)                     0.14       4.33 r
+  U507/CO (FADDX1_RVT)                     0.10       4.43 r
+  U506/CO (FADDX1_RVT)                     0.10       4.52 r
+  U505/CO (FADDX1_RVT)                     0.10       4.62 r
+  U476/CO (FADDX1_HVT)                     0.14       4.76 r
+  U504/CO (FADDX1_RVT)                     0.10       4.86 r
+  U503/CO (FADDX1_RVT)                     0.10       4.95 r
+  U502/CO (FADDX1_RVT)                     0.10       5.05 r
+  U477/CO (FADDX1_HVT)                     0.14       5.18 r
+  U501/CO (FADDX1_RVT)                     0.10       5.29 r
+  U500/CO (FADDX1_RVT)                     0.10       5.38 r
+  U499/CO (FADDX1_RVT)                     0.10       5.48 r
+  U478/CO (FADDX1_HVT)                     0.14       5.61 r
+  U498/CO (FADDX1_RVT)                     0.10       5.71 r
+  U497/CO (FADDX1_RVT)                     0.10       5.81 r
+  U479/CO (FADDX1_HVT)                     0.14       5.94 r
+  U496/CO (FADDX1_RVT)                     0.10       6.05 r
+  U495/CO (FADDX1_RVT)                     0.10       6.14 r
+  U494/CO (FADDX1_RVT)                     0.10       6.24 r
+  U480/CO (FADDX1_HVT)                     0.14       6.37 r
+  U493/CO (FADDX1_RVT)                     0.10       6.47 r
+  U492/CO (FADDX1_RVT)                     0.10       6.57 r
+  U491/CO (FADDX1_RVT)                     0.10       6.67 r
+  U481/CO (FADDX1_HVT)                     0.14       6.80 r
+  U490/CO (FADDX1_RVT)                     0.10       6.90 r
+  U489/CO (FADDX1_RVT)                     0.10       7.00 r
+  U488/CO (FADDX1_RVT)                     0.10       7.09 r
+  U482/CO (FADDX1_HVT)                     0.14       7.23 r
+  U487/CO (FADDX1_RVT)                     0.10       7.33 r
+  U486/CO (FADDX1_RVT)                     0.10       7.43 r
+  U483/CO (FADDX1_HVT)                     0.14       7.56 r
+  U485/CO (FADDX1_RVT)                     0.10       7.66 r
+  U986/S (FADDX1_HVT)                      0.20       7.86 f
+  U987/Y (AOI22X1_HVT)                     0.13       7.99 r
+  U992/Y (NAND3X0_HVT)                     0.06       8.05 f
+  Delay3_out1_reg[63]/D (DFFX1_HVT)        0.00       8.05 f
+  data arrival time                                   8.05
+
+  clock clk (rise edge)                   11.00      11.00
+  clock network delay (ideal)              0.00      11.00
+  Delay3_out1_reg[63]/CLK (DFFX1_HVT)      0.00      11.00 r
+  library setup time                      -0.08      10.92
+  data required time                                 10.92
+  -----------------------------------------------------------
+  data required time                                 10.92
+  data arrival time                                  -8.05
+  -----------------------------------------------------------
+  slack (MET)                                         2.87
+
+
+1

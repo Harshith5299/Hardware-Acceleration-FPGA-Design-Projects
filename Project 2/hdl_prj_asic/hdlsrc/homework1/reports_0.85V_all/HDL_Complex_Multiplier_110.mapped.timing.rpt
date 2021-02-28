@@ -1,0 +1,139 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : HDL_Complex_Multiplier
+Version: P-2019.03-SP3
+Date   : Tue Feb 23 13:29:21 2021
+****************************************
+
+Operating Conditions: ss0p75v125c   Library: saed32rvt_ss0p75v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Delay_out1_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Delay3_out1_reg[62]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  HDL_Complex_Multiplier
+                     8000                  saed32rvt_ss0p75v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  Delay_out1_reg[0]/CLK (DFFX1_HVT)        0.00       0.00 r
+  Delay_out1_reg[0]/QN (DFFX1_HVT)         1.41       1.41 r
+  U561/Y (AO22X1_HVT)                      1.92       3.32 r
+  U562/Y (NAND2X0_HVT)                     0.77       4.09 f
+  U527/Y (NAND3X0_RVT)                     0.32       4.41 r
+  U574/Y (NAND2X0_HVT)                     0.67       5.08 f
+  U526/Y (NAND3X0_RVT)                     0.33       5.41 r
+  U584/Y (NAND2X0_HVT)                     0.67       6.08 f
+  U524/Y (NAND3X0_RVT)                     0.33       6.40 r
+  U595/Y (NAND2X0_HVT)                     0.67       7.07 f
+  U523/Y (NAND3X0_RVT)                     0.31       7.37 r
+  U604/CO (FADDX1_HVT)                     1.48       8.85 r
+  U612/CO (FADDX1_HVT)                     1.72      10.57 r
+  U620/CO (FADDX1_HVT)                     1.78      12.36 r
+  U631/Y (NAND2X0_HVT)                     1.04      13.39 f
+  U522/Y (NAND3X0_RVT)                     0.33      13.72 r
+  U642/Y (NAND2X0_HVT)                     0.67      14.38 f
+  U521/Y (NAND3X0_RVT)                     0.31      14.69 r
+  U651/CO (FADDX1_HVT)                     1.48      16.17 r
+  U659/CO (FADDX1_HVT)                     1.72      17.89 r
+  U667/CO (FADDX1_HVT)                     1.78      19.67 r
+  U677/Y (NAND2X0_HVT)                     1.04      20.71 f
+  U520/Y (NAND3X0_RVT)                     0.33      21.03 r
+  U688/Y (NAND2X0_HVT)                     0.67      21.70 f
+  U519/Y (NAND3X0_RVT)                     0.31      22.00 r
+  U697/CO (FADDX1_HVT)                     1.48      23.48 r
+  U721/CO (FADDX1_HVT)                     1.72      25.20 r
+  U1009/CO (FADDX1_HVT)                    1.78      26.99 r
+  U722/Y (NAND2X0_HVT)                     1.04      28.02 f
+  U518/Y (NAND3X0_RVT)                     0.33      28.35 r
+  U724/Y (NAND2X0_HVT)                     0.67      29.01 f
+  U517/Y (NAND3X0_RVT)                     0.31      29.32 r
+  U1031/CO (FADDX1_HVT)                    1.48      30.80 r
+  U1038/CO (FADDX1_HVT)                    1.72      32.52 r
+  U1045/CO (FADDX1_HVT)                    1.72      34.23 r
+  U1052/CO (FADDX1_HVT)                    1.72      35.95 r
+  U1059/CO (FADDX1_HVT)                    1.72      37.67 r
+  U1066/CO (FADDX1_HVT)                    1.72      39.39 r
+  U1073/CO (FADDX1_HVT)                    1.72      41.11 r
+  U486/CO (FADDX1_HVT)                     1.84      42.95 r
+  U726/Y (NAND2X0_HVT)                     1.07      44.02 f
+  U514/Y (NAND3X0_RVT)                     0.33      44.34 r
+  U739/Y (NAND2X0_HVT)                     0.67      45.01 f
+  U513/Y (NAND3X0_RVT)                     0.33      45.34 r
+  U741/Y (NAND2X0_HVT)                     0.67      46.01 f
+  U511/Y (NAND3X0_RVT)                     0.33      46.34 r
+  U753/Y (NAND2X0_HVT)                     0.67      47.00 f
+  U510/Y (NAND3X0_RVT)                     0.31      47.31 r
+  U1098/CO (FADDX1_HVT)                    1.48      48.78 r
+  U763/CO (FADDX1_HVT)                     1.72      50.50 r
+  U1105/CO (FADDX1_HVT)                    1.72      52.22 r
+  U773/CO (FADDX1_HVT)                     1.72      53.94 r
+  U1112/CO (FADDX1_HVT)                    1.72      55.66 r
+  U487/CO (FADDX1_HVT)                     1.83      57.49 r
+  U784/Y (NAND2X0_HVT)                     1.06      58.55 f
+  U508/Y (NAND3X0_RVT)                     0.33      58.88 r
+  U796/Y (NAND2X0_HVT)                     0.67      59.55 f
+  U507/Y (NAND3X0_RVT)                     0.31      59.85 r
+  U1125/CO (FADDX1_HVT)                    1.48      61.33 r
+  U488/CO (FADDX1_HVT)                     1.83      63.16 r
+  U813/Y (NAND2X0_HVT)                     1.06      64.22 f
+  U505/Y (NAND3X0_RVT)                     0.33      64.55 r
+  U824/Y (NAND2X0_HVT)                     0.67      65.22 f
+  U504/Y (NAND3X0_RVT)                     0.31      65.52 r
+  U833/CO (FADDX1_HVT)                     1.48      67.00 r
+  U841/CO (FADDX1_HVT)                     1.72      68.72 r
+  U849/CO (FADDX1_HVT)                     1.72      70.44 r
+  U489/CO (FADDX1_HVT)                     1.83      72.27 r
+  U866/Y (NAND2X0_HVT)                     1.06      73.33 f
+  U502/Y (NAND3X0_RVT)                     0.33      73.66 r
+  U877/Y (NAND2X0_HVT)                     0.67      74.32 f
+  U501/Y (NAND3X0_RVT)                     0.31      74.63 r
+  U886/CO (FADDX1_HVT)                     1.48      76.11 r
+  U894/CO (FADDX1_HVT)                     1.72      77.83 r
+  U902/CO (FADDX1_HVT)                     1.72      79.55 r
+  U910/CO (FADDX1_HVT)                     1.72      81.26 r
+  U918/CO (FADDX1_HVT)                     1.78      83.05 r
+  U928/Y (NAND2X0_HVT)                     1.04      84.09 f
+  U499/Y (NAND3X0_RVT)                     0.33      84.41 r
+  U939/Y (NAND2X0_HVT)                     0.67      85.08 f
+  U498/Y (NAND3X0_RVT)                     0.31      85.38 r
+  U948/CO (FADDX1_HVT)                     1.54      86.93 r
+  U958/Y (NAND2X0_HVT)                     1.04      87.96 f
+  U496/Y (NAND3X0_RVT)                     0.33      88.29 r
+  U969/Y (NAND2X0_HVT)                     0.67      88.95 f
+  U495/Y (NAND3X0_RVT)                     0.31      89.26 r
+  U978/CO (FADDX1_HVT)                     1.48      90.74 r
+  U986/CO (FADDX1_HVT)                     1.72      92.46 r
+  U994/CO (FADDX1_HVT)                     1.72      94.17 r
+  U1002/S (FADDX1_HVT)                     1.65      95.82 r
+  U995/Y (AO22X1_HVT)                      1.64      97.46 r
+  U996/Y (OR2X1_HVT)                       0.76      98.22 r
+  U997/Y (AO21X1_HVT)                      0.54      98.77 r
+  Delay3_out1_reg[62]/D (DFFX1_HVT)        0.00      98.77 r
+  data arrival time                                  98.77
+
+  clock clk (rise edge)                  110.00     110.00
+  clock network delay (ideal)              0.00     110.00
+  Delay3_out1_reg[62]/CLK (DFFX1_HVT)      0.00     110.00 r
+  library setup time                      -1.54     108.46
+  data required time                                108.46
+  -----------------------------------------------------------
+  data required time                                108.46
+  data arrival time                                 -98.77
+  -----------------------------------------------------------
+  slack (MET)                                         9.69
+
+
+1

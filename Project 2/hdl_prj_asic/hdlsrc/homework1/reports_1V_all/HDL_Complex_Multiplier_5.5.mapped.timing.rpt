@@ -1,0 +1,82 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : HDL_Complex_Multiplier
+Version: P-2019.03-SP3
+Date   : Tue Feb 23 12:46:38 2021
+****************************************
+
+Operating Conditions: ss0p95v125c   Library: saed32rvt_ss0p95v125c
+Wire Load Model Mode: enclosed
+
+  Startpoint: Delay2_out1_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: Delay3_out1_reg[63]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  HDL_Complex_Multiplier
+                     8000                  saed32rvt_ss0p95v125c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  Delay2_out1_reg[2]/CLK (DFFX1_HVT)       0.00       0.00 r
+  Delay2_out1_reg[2]/Q (DFFX1_HVT)         0.27       0.27 f
+  U639/Y (NBUFFX4_HVT)                     0.16       0.43 f
+  U696/Y (XOR2X1_HVT)                      0.22       0.65 r
+  U697/Y (NOR2X0_HVT)                      0.12       0.78 f
+  U782/Y (OAI21X1_HVT)                     0.15       0.93 r
+  U786/Y (AOI21X1_HVT)                     0.14       1.07 f
+  U794/Y (OAI21X1_HVT)                     0.15       1.22 r
+  U810/Y (AOI21X1_HVT)                     0.13       1.35 f
+  U811/Y (OAI21X1_HVT)                     0.13       1.48 r
+  U465/Y (AO21X1_HVT)                      0.12       1.59 r
+  U1257/CO (FADDX1_HVT)                    0.14       1.73 r
+  U467/CO (FADDX1_HVT)                     0.14       1.87 r
+  U490/CO (FADDX1_RVT)                     0.10       1.97 r
+  U489/CO (FADDX1_RVT)                     0.10       2.07 r
+  U488/CO (FADDX1_RVT)                     0.10       2.17 r
+  U468/CO (FADDX1_HVT)                     0.14       2.30 r
+  U487/CO (FADDX1_RVT)                     0.10       2.40 r
+  U486/CO (FADDX1_RVT)                     0.10       2.50 r
+  U485/CO (FADDX1_RVT)                     0.10       2.59 r
+  U484/CO (FADDX1_RVT)                     0.10       2.69 r
+  U483/CO (FADDX1_RVT)                     0.10       2.79 r
+  U482/CO (FADDX1_RVT)                     0.10       2.88 r
+  U469/CO (FADDX1_HVT)                     0.14       3.02 r
+  U481/CO (FADDX1_RVT)                     0.10       3.12 r
+  U480/CO (FADDX1_RVT)                     0.10       3.21 r
+  U479/CO (FADDX1_RVT)                     0.10       3.31 r
+  U478/CO (FADDX1_RVT)                     0.10       3.41 r
+  U477/CO (FADDX1_RVT)                     0.10       3.50 r
+  U476/CO (FADDX1_RVT)                     0.10       3.60 r
+  U470/CO (FADDX1_HVT)                     0.14       3.73 r
+  U475/CO (FADDX1_RVT)                     0.10       3.83 r
+  U1367/CO (FADDX1_HVT)                    0.13       3.96 r
+  U1370/Y (XOR2X1_HVT)                     0.16       4.13 f
+  U1371/Y (NAND2X0_HVT)                    0.05       4.18 r
+  U471/Y (NAND4X0_RVT)                     0.05       4.23 f
+  Delay3_out1_reg[63]/D (DFFX1_HVT)        0.00       4.23 f
+  data arrival time                                   4.23
+
+  clock clk (rise edge)                    5.50       5.50
+  clock network delay (ideal)              0.00       5.50
+  Delay3_out1_reg[63]/CLK (DFFX1_HVT)      0.00       5.50 r
+  library setup time                      -0.08       5.42
+  data required time                                  5.42
+  -----------------------------------------------------------
+  data required time                                  5.42
+  data arrival time                                  -4.23
+  -----------------------------------------------------------
+  slack (MET)                                         1.19
+
+
+1

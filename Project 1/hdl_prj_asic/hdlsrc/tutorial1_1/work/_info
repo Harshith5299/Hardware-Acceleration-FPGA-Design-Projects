@@ -1,0 +1,43 @@
+m255
+K4
+z2
+!s11f vlog 2019.1 2019.01, Jan  1 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/afs/asu.edu/users/h/c/h/hchittaj/hdl_prj_asic/hdlsrc/tutorial1_1
+T_opt
+!s110 1612309060
+V:dHnQ:4BgQ1a0F759UGCe1
+04 22 4 work HDL_Complex_Multiplier fast 0
+=1-506b8d88c15a-6019e243-d741d-48a8
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2019.1;69
+vHDL_Complex_Multiplier
+!s110 1612309059
+!i10b 1
+!s100 D`KZHDkWfcSd;NG8NXbmU2
+!s11b ]ZFS_d3SJ7dcCZCG9LVVc1
+Ie6hJ?9EEl_=ggUC2nbBTc0
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1612308896
+8HDL_Complex_Multiplier.v
+FHDL_Complex_Multiplier.v
+L0 41
+OL;L;2019.1;69
+r1
+!s85 0
+31
+!s108 1612309058.000000
+!s107 HDL_Complex_Multiplier.v|
+!s90 HDL_Complex_Multiplier.v|
+!i113 0
+o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+n@h@d@l_@complex_@multiplier

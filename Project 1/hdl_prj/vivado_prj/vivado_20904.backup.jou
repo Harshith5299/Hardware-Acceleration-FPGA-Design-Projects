@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Feb  2 16:18:04 2021
+# Process ID: 20904
+# Current directory: C:/hdl_prj/vivado_prj
+# Command line: vivado.exe -mode batch -notrace -source HDL_Complex_Multiplier_Xilinx_Vivado_run.tcl
+# Log file: C:/hdl_prj/vivado_prj/vivado.log
+# Journal file: C:/hdl_prj/vivado_prj\vivado.jou
+#-----------------------------------------------------------
+source HDL_Complex_Multiplier_Xilinx_Vivado_run.tcl -notrace
